@@ -10,9 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "@actions/artifact": "^1.1.1",
+    "@actions/artifact-v2": "npm:@actions/artifact@^2.1.4",
     "@actions/core": "^1.10.0",
     "@actions/github": "^5.1.1",
-    "artifact-v2": "npm:@actions/artifact@^2.1.4",
     "axios": "^1.6.0",
     "sjcl": "^1.0.8",
     "typescript": "^4.7.4"
