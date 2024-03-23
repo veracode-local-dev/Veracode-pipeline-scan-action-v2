@@ -139,14 +139,16 @@ async function run (parameters:any){
     core.info(scanCommandOutput)
 
     const use_upgraded_version = core.getInput('use_upgraded_version', {required: false}) ?? false;
+    core.info("use_upgraded_version: ");
+    core.info(use_upgraded_version);
 
     //store output files as artifacts
     const artifact = require('@actions/artifact');
     let artifactClient = artifact.create()
-    if(use_upgraded_version) {
-        const {DefaultArtifactClient} = require('@actions/artifact-v2')
-        artifactClient = new DefaultArtifactClient()
-    }
+    // if(use_upgraded_version) {
+    //     const {DefaultArtifactClient} = require('@actions/artifact-v2')
+    //     artifactClient = new DefaultArtifactClient()
+    // }
     const artifactName = 'Veracode Pipeline-Scan Results';
     const files = [
         'results.json',
