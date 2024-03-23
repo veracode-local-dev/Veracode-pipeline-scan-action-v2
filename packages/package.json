@@ -1,6 +1,0 @@
-{
-  "name": "veracode-pipeline-scan-github-action",
-  "dependencies": {
-    "@actions/artifact": "2.1.4"
-  }
-}

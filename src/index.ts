@@ -144,7 +144,7 @@ async function run (parameters:any){
     const artifact = require('@actions/artifact');
     let artifactClient = artifact.create()
     if(use_upgraded_version) {
-        const {DefaultArtifactClient} = require('@actions/artifact')
+        const {DefaultArtifactClient} = require('artifact-v2')
         artifactClient = new DefaultArtifactClient()
     }
     const artifactName = 'Veracode Pipeline-Scan Results';
